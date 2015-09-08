@@ -1,0 +1,22 @@
+{% extends "admin/base.html" %}
+{% block nav-global %}{% endblock %}
+
+{% load i18n %}
+
+
+{% block title %}{{ title }} | Mexicoder Actions and Assessment{% endblock %}
+{% block extrastyle %}
+
+<style>
+
+#header{ background-color: orange; color: blue; border-bottom: solid 3px #EC604A;; }
+#branding h1{ color: #fff; }
+.module h2, .module caption, .inline-group h2 { bottom left repeat-x; color: #333940; }
+a.section:link, a.section:visited { color: #666666; }
+</style>
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Mexicoder Actions and Assessment</a></h1>
+{% endblock %}
+
